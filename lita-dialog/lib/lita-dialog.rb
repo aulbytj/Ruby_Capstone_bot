@@ -5,6 +5,7 @@ Lita.load_locales Dir[File.expand_path(
 )]
 
 require "lita/handlers/dialog"
+require_relative "../bin/main"
 
 Lita::Handlers::Dialog.template_root File.expand_path(
   File.join("..", "..", "templates"),
