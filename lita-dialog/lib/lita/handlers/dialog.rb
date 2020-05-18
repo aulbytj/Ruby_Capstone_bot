@@ -1,4 +1,4 @@
-require_relative '../../../bin/main'
+require_relative('../../../bin/main')
 
 module Lita
   module Handlers
@@ -11,12 +11,7 @@ module Lita
       route(/says/i, :says_responses, command: true)
       route(/.*i have an idea|i have got a plan.*/i, :sarcastic_response, command: true)
       route(/.*you are the best|you are awesome.*/i, :best_response)
-      route(/daniel/i, :daniel)
-      route(/pedro/i, :pedro)
-      route(/maurico/i, :maurico)
-      route(/kamilu/i, :kamilu)
-      route(/aulbourn/i, :aulbourn)
-       Lita.register_handler(Dialog)
+      Lita.register_handler(Dialog)
     end
   end
 end

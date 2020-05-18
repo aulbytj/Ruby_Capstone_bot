@@ -5,11 +5,12 @@ AllCops:
     - "README.md"
     - "Guardfile"
     - "Rakefile"
-    - "chatbot/lita_config.rb"
-    - "chatbot/lita-dialog/lib/lita-dialog.rb"
-    - "chatbot/lita-dialog/spec/spec_helper.rb"
-    - "chatbot/lita-dialog/lita-dialog.gemspec"
-    - "chatbot/Gemfile"
+    - "lita_config.rb"
+    - "lita-dialog/Rakefile"
+    - "lita-dialog/lib/lita-dialog.rb"
+    - "lita-dialog/spec/spec_helper.rb"
+    - "lita-dialog/lita-dialog.gemspec"
+    - "Gemfile"
 
   DisplayCopNames: true
 

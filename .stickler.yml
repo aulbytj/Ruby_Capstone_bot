@@ -11,13 +11,12 @@ files:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
-    - "chatbot/lita_config.rb"
-    - "chatbot/lita-dialog/lib/lita-dialog.rb"
-    - "chatbot/lita-dialog/spec/spec_helper.rb"
-    - "chatbot/lita-dialog/lita-dialog.gemspec"
-    - "chatbot/Gemfile"
-
-
+    - "lita_config.rb"
+    - "lita-dialog/Rakefile"
+    - "lita-dialog/lib/lita-dialog.rb"
+    - "lita-dialog/spec/spec_helper.rb"
+    - "lita-dialog/lita-dialog.gemspec"
+    - "Gemfile"
 # PLEASE DO NOT enable auto fixing options
 # if you need extra support from you linter - do it in your local env as described in README for this config
 # find full documentation here: https://stickler-ci.com/docs

@@ -1,4 +1,4 @@
-require "spec_helper"
+require('spec_helper')
 
 describe Lita::Handlers::Dialog, lita_handler: true do
   it { is_expected.to(route_command('hello').to(:greeting_response)) }
@@ -8,13 +8,13 @@ describe Lita::Handlers::Dialog, lita_handler: true do
   it { is_expected.to_not(route('hi').to(:greeting_response)) }
 
   it { is_expected.to(route_command('good morning').to(:greeting_response)) }
-  it {is_expected.to_not(route('good morning').to(:greeting_response)) }
+  it { is_expected.to_not(route('good morning').to(:greeting_response)) }
 
   it { is_expected.to(route_command('morning').to(:greeting_response)) }
-  it {is_expected.to_not(route('morning').to(:greeting_response)) }
+  it { is_expected.to_not(route('morning').to(:greeting_response)) }
 
   it { is_expected.to(route_command('welcome').to(:greeting_response)) }
-  it {is_expected.to_not(route('welcome').to(:greeting_response)) }
+  it { is_expected.to_not(route('welcome').to(:greeting_response)) }
 
   it { is_expected.to(route_command('thanks').to(:polite_response)) }
   it { is_expected.to_not(route('thanks').to(:polite_response)) }

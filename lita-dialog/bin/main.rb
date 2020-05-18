@@ -56,7 +56,6 @@ module Main
       "\nHi I'm Jaybot!\n
           I'm just your regular chatbot, for those that don't know me\n
           here is how you can interact with me\n
-          \n
           Prefix my name 'jaybot' or @jaybot with an\n
           statement containing any of  these words\n
            - 'hi, hello, morning, welcome\n
@@ -64,45 +63,9 @@ module Main
            -  bye, see you, what are you doing, what is that\n
            -  i have a plan, i have an idea.\n
           Hey if you would like for me to compliment you I can\n
-          'lita compliment #{response
-        .user
-        .name}'\n
-          'lita double 10'\n
-          She can even give you information on gems
-          'lita gem rails'\n
-          Anyone here from Team 77 the Owls? then introuduce yourselves\n
-        Aulbourn has told me much about you guys.\n
+          'jaybot compliment #{response.user.name}' I can double a number\n
+          'jaybot double 10' and look up info on gmes 'jaybot gem rails'\n
           Well enough about me, waiting to hear from you."
-    )
-  end
-
-  def daniel(response)
-    response.reply(
-      "Oh your, #{response.user
-        .name} thanks for turning Aulbourn on to vim and c++."
-    )
-  end
-
-  def pedro(response)
-    response.reply(
-      "hey, #{response.user.name} i hear you keep the team spirits up."
-    )
-  end
-
-  def maurico(response)
-    response.reply("#{response.user.name} the budding programmer, keep at it.")
-  end
-
-  def kamilu(response)
-    response.reply(
-      "Hey, #{response.user.name} i hear the you are a one man coding machine!"
-    )
-  end
-
-  def aulbourn(response)
-    response.reply(
-      "Yes, #{response.user
-        .name} i already know who you are, no need to introduct yourself."
     )
   end
 
