@@ -13,7 +13,7 @@
 Accept the inviation to the Slack workspace 'mrjaysneighborhood' [here](https://join.slack.com/t/mrjaysneighborhood/shared_invite/zt-e211lq47-cbJr0FnVZJjn79YCbuZqpg)\
 Type `jaybot says` or `@jaybot says` in any of the channels for instructions on how to interact with jaybot.\
 If you don't already have a Slack account now would be a great time to get one!😁
-To see the code you can click [here](https://github.com/aulbytj/Build_your_own_bot-Capstone/tree/develop).
+To see the code you can click [here](ttps://github.com/aulbytj/Ruby_Capstone_bot/tree/develop).
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ lita
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/aulbytj/Build_your_own_bot-Capstone/issues).
+Feel free to check the [issues page](ttps://github.com/aulbytj/Ruby_Capstone_bot/issues).
 
 ## Show your support
 
@@ -123,4 +123,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-his project is [MIT](lic.url) licensed.
