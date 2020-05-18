@@ -18,8 +18,8 @@ To see the code you can click [here](https://github.com/aulbytj/Build_your_own_b
 ### Prerequisites
 
 Must have a Slack account.\
-If you would like to test this the code locally you will need to have Ruby installed.\
-To run test, must have RSpec installed.\
+If you would like to test this the code locally must have Ruby installed.\
+To run test, must have RSpec and Redis installed.\
 Must have Lita installed.
 
 ### Installation
@@ -50,10 +50,11 @@ $ tar xzf redis-6.0.3.tar.gz
 $ cd redis-6.0.3
 $ make
 ```
-Run redis with
+
+On Mac you can use Home brew.
 
 ```
-src/redis
+brew install redis
 ```
 
 To install Lita running the following command in your shell:
@@ -68,30 +69,32 @@ Ensure the redis is running `redis-cli` should output `Pong`, if not then start 
 
 If installed with Hombrew
 
-
 ```
 brew services start redis
 ```
 
-If installed manually Run redis with
+If installed manually navigate to where redis is installed and Run redis with
 
 ```
 src/redis
 ```
 
-Navigate to the directory ` jaybot/lita-dialog ` in the terminal and run
+Navigate to the directory `Ruby_Capstone_bot/jaybot/lita-dialog ` in the terminal and run
 
 ```
 rspec
 ```
 
-To test jaybot locally, redis ans lita must be insstalled on you machine.
+To test jaybot locally, redis and lita must be installed on your machine.
 
-Start redis server
+Start redis server, navigate to where you installed redis and run 
+```
+src/redis
+```
 
 ```
 git clone https://github.com/aulbytj/Ruby_Capstone_bot.git
-cd jaybot/
+cd Ruby_Capstone_bot/jaybot/
 lita
 ```
 
