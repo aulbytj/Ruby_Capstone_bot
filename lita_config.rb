@@ -17,12 +17,22 @@ Lita.configure do |config|
 
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
+  # config.robot.adapter = :shell
+
+  # Lita.configure do |config|
+  #   config.robot.adapter = :slack
+  #   config.adapters.slack.token = "xoxb-1116256698930-1114894743317-PLN9jCfHHj2CdJqm2AnABNXf"
+  # end
 
   Lita.configure do |config|
-	config.robot.adapter = :slack
-	config.adapters.slack.token = "xoxb-1116256698930-1114894743317-PLN9jCfHHj2CdJqm2AnABNXf"
+    if ENV.fetch('RAC_ENV', 'development') == 'production'do
+      config.robot.adapter = :slack
+      config.adapters.slack.token = ENV.fetch('SLACK_API_KEY', '')
+    else
+      config.robot.adapter = :shell
+    end
   end
+
 
   if ENV['RACK_ENV'] == 'production'
     config.robot.adapter = 'slack'
