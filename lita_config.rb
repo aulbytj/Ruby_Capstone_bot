@@ -19,29 +19,28 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   # config.robot.adapter = :shell
 
-  # Lita.configure do |config|
-  #   config.robot.adapter = :slack
-  #   config.adapters.slack.token = "xoxb-1116256698930-1114894743317-PLN9jCfHHj2CdJqm2AnABNXf"
-  # end
-
   Lita.configure do |config|
-    if ENV.fetch('RAC_ENV', 'development') == 'production'
-      config.robot.adapter = :slack
-      config.adapters.slack.token = ENV.fetch('SLACK_API_KEY', '')
-    else
-      config.robot.adapter = :shell
-    end
+    config.robot.adapter = :slack
+    config.adapters.slack.token = "xoxb-1116256698930-1114894743317-2dDRKcV6Wq7q3vJXkLlIWPsu"
   end
+  
+  #   Lita.configure do |config| 
+  #     if ENV.fetch('RAC_ENV', 'development') == 'production'
+  #       config.robot.adapter = :slack
+  #       config.adapters.slack.token = ENV.fetch('SLACK_API_KEY', '')
+  #     else
+  #       config.robot.adapter = :shell
+  #     end
+  #   end
+  
+  #   if ENV['RACK_ENV'] == 'production'
+  #     config.robot.adapter = 'slack'
+  #     config.redis[:url] = ENV.fetch('REDIS_URL')
+  #   else
+  #     config.robot.adapter = 'shell'
+  #   end
 
-
-  if ENV['RACK_ENV'] == 'production'
-    config.robot.adapter = 'slack'
-    config.redis[:url] = ENV.fetch('REDIS_URL')
-  else
-    config.robot.adapter = 'shell'
-  end
-
-  config.adapters.slack.token = ENV.fetch('SLACK_TOKEN', '')
+  #   config.adapters.slack.token = ENV.fetch('SLACK_TOKEN', '')
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
